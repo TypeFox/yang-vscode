@@ -1,0 +1,33 @@
+{
+	"name": "Yang",
+	"patterns": [
+		{
+			"name": "keyword.control.yang",
+			"match": "\\b(action|anydata|anyxml|argument|augment|base|belongs-to|bit|case|choice|config|contact|container|default|description|deviate|deviation|enum|error-app-tag|error-message|extension|feature|fraction-digits|grouping|identity|if-feature|import|include|input|key|leaf|leaf-list|length|list|mandatory|max-elements|min-elements|module|must|namespace|notification|ordered-by|organization|output|path|pattern|prefix|presence|range|reference|refine|require-instance|revision|revision-date|rpc|status|submodule|type|typedef|units|unique|uses|when|yang-version|yin-element)\\b"
+		},
+		{
+			"name": "keyword.other.yang",
+			"match": "\\b(add|and|current|delete|deprecated|false|invert-match|max|min|not|not-supported|obsolete|or|replace|system|true|unbounded|user)\\b"
+		},
+		{
+			"name": "string.quoted.double.yang",
+			"begin": "\"",
+			"end": "\""
+		},
+		{
+			"name": "string.quoted.single.yang",
+			"begin": "'",
+			"end": "'"
+		},
+		{
+			"name": "comment.line.double-slash.yang",
+			"match": "//.+"
+		},
+		{
+			"name": "comment.block.yang",
+			"begin": "/\\*",
+			"end": "\\*/"
+		}
+	],
+	"scopeName": "source.yang"
+}

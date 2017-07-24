@@ -1,0 +1,66 @@
+{
+    "name": "yang-lsp",
+    "displayName": "yang-lsp",
+    "description": "Yang support with LSP",
+    "version": "0.0.1",
+    "publisher": "typefox",
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "activationEvents": [
+        "onLanguage:yang"
+    ],
+    "main": "./out/client/extension",
+    "contributes": {
+        "languages": [
+            {
+                "id": "yang",
+                "aliases": [
+                    "Yang",
+                    "yang"
+                ],
+                "extensions": [
+                    ".yang"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "yang",
+                "scopeName": "source.yang",
+                "path": "./syntaxes/yang.tmLanguage.json"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "Yang client configuration",
+            "properties": {
+                "yangLanguageServer.maxNumberOfProblems": {
+                    "type": "number",
+                    "default": 100,
+                    "description": "Controls the maximum number of problems produced by the server."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "preinstall": "rm -rf ./out/build && mkdir out/build && cp -r ../yang-lsp/yang-lsp/io.typefox.yang.diagram/build/install/yang-language-server ./out/build || echo 'Could not copy yang-lsp, make sure it sits next to the yang-vscode repo, and that you executed `./gradlew installDist`.'",
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    },
+    "dependencies": {
+        "vscode-languageclient": "^3.1.0"
+    }
+}
