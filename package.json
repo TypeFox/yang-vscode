@@ -1,9 +1,14 @@
 {
-    "name": "yang-lsp",
-    "displayName": "yang-lsp",
-    "description": "Yang support with LSP",
-    "version": "0.0.1",
-    "publisher": "typefox",
+    "name": "yang-vscode",
+    "displayName": "Yang VS Code Extension",
+    "description": "Yang editor support for VS Code, based on YANG-LSP.",
+    "version": "1.0.0",
+    "publisher": "TypeFox (typefox.io)",
+    "license": "Apache",
+    "repository": {
+        "url": "https://github.com/yang-tools/yang-vscode.git"
+    },
+    "icon": "images/yin_yang.png",
     "engines": {
         "vscode": "^1.14.0"
     },
