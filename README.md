@@ -7,7 +7,7 @@ Provides [YANG](https://tools.ietf.org/html/rfc7950) language support via
 Quick Start
 ============
 1. Install the Extension
-2. If you do not have a _Java 8_ correctly installed and.
+2. If you do not have a _Java 8_ correctly installed
     * Download and install a Java 8 runtime environment.
 3. Extension is activated when you first access a YANG file
 
