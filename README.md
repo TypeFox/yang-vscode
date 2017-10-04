@@ -2,7 +2,7 @@ Language support for YANG for Visual Studio Code
 =====================
 
 Provides [YANG](https://tools.ietf.org/html/rfc7950) language support via
-[YANG Language Server](https://github.com/yang-tools/yang-lsp).
+[YANG Language Server](https://github.com/theia-ide/yang-lsp).
 
 Quick Start
 ============
@@ -13,9 +13,9 @@ Quick Start
 
 Features
 =========
-![ templates ](https://raw.githubusercontent.com/yang-tools/yang-vscode/master/images/yang-templates.gif)
-![ completion ](https://raw.githubusercontent.com/yang-tools/yang-vscode/master/images/yang-completion.gif)
-![ navigation ](https://raw.githubusercontent.com/yang-tools/yang-vscode/master/images/yang-navigation.gif)
+![ templates ](https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-templates.gif)
+![ completion ](https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-completion.gif)
+![ navigation ](https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-navigation.gif)
 
 * As you type reporting of parsing and compilation errors
 * Code completion

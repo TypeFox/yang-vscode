@@ -6,7 +6,7 @@
     "publisher": "typefox",
     "license": "Apache",
     "repository": {
-        "url": "https://github.com/yang-tools/yang-vscode.git"
+        "url": "https://github.com/theia-ide/yang-vscode.git"
     },
     "icon": "images/yin_yang.png",
     "engines": {
