@@ -10,7 +10,7 @@
     },
     "icon": "images/yin_yang.png",
     "engines": {
-        "vscode": "^1.14.0"
+        "vscode": "^1.17.0"
     },
     "categories": [
         "Languages"
@@ -53,17 +53,17 @@
         }
     },
     "scripts": {
-        "preinstall": "rm -rf ./out/build && mkdir out/build && cp -r ../yang-lsp/yang-lsp/io.typefox.yang.diagram/build/install/yang-language-server ./out/build || echo 'Could not copy yang-lsp, make sure it sits next to the yang-vscode repo, and that you executed `./gradlew installDist`.'",
+        "preinstall": "npm run install:languageserver",
+        "install:languageserver": "rm -rf ./build && mkdir build && npm run download:languageserver",
+        "download:languageserver": "curl -o yang-language-server.zip http://services.typefox.io/open-source/jenkins/job/yang-lsp/job/master/lastSuccessfulBuild/artifact/yang-lsp/build/yang-language-server_diagram-extension_0.1.0-SNAPSHOT.zip && unzip yang-language-server.zip -d build/ && mv build/yang-language-server-0.1.0-SNAPSHOT build/yang-language-server",
         "vscode:prepublish": "tsc -p ./",
         "compile": "tsc -watch -p ./",
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
-        "typescript": "^2.0.3",
-        "vscode": "^1.0.0",
-        "mocha": "^2.3.3",
-        "@types/node": "^6.0.40",
-        "@types/mocha": "^2.2.32"
+        "typescript": "^2.6.2",
+        "vscode": "^1.1.10",
+        "@types/node": "^6.0.40"
     },
     "dependencies": {
         "vscode-languageclient": "^3.1.0"

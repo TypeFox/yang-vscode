@@ -30,7 +30,7 @@ export function activate(context: ExtensionContext) {
 
     // The server is implemented in node
     let executable = os.platform() === 'win32' ? 'yang-language-server.bat' : 'yang-language-server';
-    let serverModule = context.asAbsolutePath(path.join('out', 'build', 'yang-language-server', 'bin', executable));
+    let serverModule = context.asAbsolutePath(path.join('build', 'yang-language-server', 'bin', executable));
 
     // If the extension is launched in debug mode then the debug server options are used
     // Otherwise the run options are used
