@@ -28,3 +28,12 @@ Features
 * Code formatting
 * Code snippets
 * Code actions
+
+Publishing
+==========
+
+Once you have the Personal Access Token configured as described [here](https://code.visualstudio.com/docs/extensions/publish-extension), publishing is a matter of calling
+
+   vsce publish
+   
+on the command line.
