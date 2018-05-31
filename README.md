@@ -35,9 +35,8 @@ Publishing
 Once you have the Personal Access Token configured as described [here](https://code.visualstudio.com/docs/extensions/publish-extension), publishing is a matter of calling
 
 ```bash
-npm install
-npm run install:languageserver
-vi package.json      # update the version number manually
+npm install      # will also download the latest YANG LS from Jenkins
+vi package.json  # update the version number manually
 vsce publish
 ```
  
