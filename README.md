@@ -34,6 +34,11 @@ Publishing
 
 Once you have the Personal Access Token configured as described [here](https://code.visualstudio.com/docs/extensions/publish-extension), publishing is a matter of calling
 
-    vsce publish
-   
+```bash
+npm install
+npm run install:languageserver
+vi package.json      # update the version number manually
+vsce publish
+```
+ 
 on the command line.
