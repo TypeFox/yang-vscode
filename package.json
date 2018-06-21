@@ -2,7 +2,7 @@
     "name": "yang-vscode",
     "displayName": "Yang VS Code Extension",
     "description": "Yang editor support for VS Code, based on YANG-LSP.",
-    "version": "1.6.7777777",
+    "version": "1.7.0",
     "publisher": "typefox",
     "license": "Apache-2.0",
     "repository": {
