@@ -29,6 +29,10 @@ Features
 * Code snippets
 * Code actions
 
+Configuration
+=============
+For configuration and further services, please have a look at the [docs of the YANG Language Server](https://github.com/theia-ide/yang-lsp/tree/master/docs).
+
 Publishing
 ==========
 
