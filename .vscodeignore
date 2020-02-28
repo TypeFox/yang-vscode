@@ -1,10 +1,6 @@
-.vscode/**
-.vscode-test/**
-out/test/**
-test/**
-src/**
-**/*.map
-.gitignore
+.vscode/
+node_modules/
 tsconfig.json
-vsc-extension-quickstart.md
+webpack.config.js
+tslint.json
 yang-language-server.zip
