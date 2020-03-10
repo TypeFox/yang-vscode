@@ -5509,22 +5509,10 @@ sprotty-vscode-webview@0.0.10:
     reflect-metadata "^0.1.12"
     sprotty next
 
-sprotty@^0.7.0:
+sprotty@0.7.0, sprotty@^0.7.0, sprotty@next:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/sprotty/-/sprotty-0.7.0.tgz#8346c4ea99529a7394fd69f0692ad8293f350fd2"
   integrity sha512-eyRBuotqQejSamcD1U8ahohUfzz4MSofFdim3i2+iZbe2dsiPC3w7W27mqoGE/1/61L1hNQMhMneD0SmIjAj/g==
-  dependencies:
-    autocompleter "5.1.0"
-    file-saver "2.0.2"
-    inversify "5.0.1"
-    snabbdom "0.7.3"
-    snabbdom-jsx "0.4.2"
-    snabbdom-virtualize "0.7.0"
-
-sprotty@next:
-  version "0.8.0-next.666cfe0"
-  resolved "https://registry.yarnpkg.com/sprotty/-/sprotty-0.8.0-next.666cfe0.tgz#a28991e7601bb466857ca076570a2b16db851a55"
-  integrity sha512-Yh04DIYMCEKHWBk44TWxZduBeDlQWTldddiFjvpjyrFS2r2VJk68RM2s1FI2vmMtGRdB4XTuLQ3ICznqiyqghg==
   dependencies:
     autocompleter "5.1.0"
     file-saver "2.0.2"

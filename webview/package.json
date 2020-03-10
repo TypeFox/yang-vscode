@@ -10,5 +10,8 @@
     "workspaces": [
       "yang-sprotty",
       "yang-sprotty-vscode"
-    ]
+    ],
+    "resolutions": {
+      "**/sprotty": "0.7.0"
+    }
   }
