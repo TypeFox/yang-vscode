@@ -10,16 +10,14 @@
         "emitDecoratorMetadata": true,
         "skipLibCheck": true,
         "module": "commonjs",
-        "target": "es6",
-        "outDir": "extension/lib",
+        "target": "es5",
+        "outDir": "lib",
         "lib": [
-            "es6"
-        ],
-        "types": [
-            "node"
+            "es6",
+            "dom"
         ]
     },
     "include": [
-        "extension/src"
+        "src"
     ]
 }
