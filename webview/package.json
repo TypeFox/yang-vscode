@@ -5,7 +5,8 @@
     },
     "scripts": {
       "prepare": "lerna run prepare",
-      "build": "lerna run build"
+      "build": "lerna run build",
+      "vscode:prepublish": "lerna run vscode:prepublish"
     },
     "workspaces": [
       "yang-sprotty",
