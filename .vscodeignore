@@ -1,6 +1,10 @@
 .vscode/
-node_modules/
-tsconfig.json
-webpack.config.js
-tslint.json
+images/*.gif
 yang-language-server.zip
+**/node_modules/
+**/tsconfig.json
+**/lerna.json
+**/webpack.config.js
+**/tslint.json
+**/yarn.lock
+**/yarn-error.log
