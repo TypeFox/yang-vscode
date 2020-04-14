@@ -2,7 +2,7 @@
     "name": "yang-vscode",
     "displayName": "Yangster",
     "description": "Yang editor support and diagrams for VS Code",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "publisher": "typefox",
     "license": "Apache-2.0",
     "icon": "images/yin_yang.png",
@@ -119,16 +119,16 @@
         ]
     },
     "dependencies": {
-        "sprotty-vscode": "^0.0.20",
+        "sprotty-vscode": "0.0.21",
         "vscode-languageclient": "^5.2.1"
     },
     "devDependencies": {
         "@types/node": "^10.17.16",
-        "ts-loader": "^6.2.1",
-        "tslint": "^6.0.0",
-        "typescript": "^3.8.2",
+        "ts-loader": "^6.2.2",
+        "tslint": "^6.1.1",
+        "typescript": "^3.8.3",
         "vscode": "^1.1.36",
-        "webpack": "^4.41.6",
+        "webpack": "^4.42.1",
         "webpack-cli": "^3.3.11"
     },
     "scripts": {

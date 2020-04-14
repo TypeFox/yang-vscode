@@ -1,18 +1,32 @@
 {
-    "private": true,
-    "devDependencies": {
-      "lerna": "3.20.2"
-    },
-    "scripts": {
-      "prepare": "lerna run prepare",
-      "build": "lerna run build",
-      "vscode:prepublish": "lerna run vscode:prepublish"
-    },
-    "workspaces": [
-      "yang-sprotty",
-      "yang-sprotty-vscode"
-    ],
-    "resolutions": {
-      "**/sprotty": "0.7.0"
-    }
+  "name": "yang-vscode-webview",
+  "version": "0.0.0",
+  "license": "Apache-2.0",
+  "files": [
+    "lib",
+    "src",
+    "css"
+  ],
+  "dependencies": {
+    "sprotty-vscode-webview": "0.0.11",
+    "yang-sprotty": "0.2.2"
+  },
+  "devDependencies": {
+    "css-loader": "^3.5.2",
+    "rimraf": "^3.0.2",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^1.1.3",
+    "tslint": "^6.1.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "prepare": "yarn clean && yarn build",
+    "vscode:prepublish": "yarn clean && yarn lint && webpack --mode=production",
+    "clean": "rimraf lib pack",
+    "build": "webpack --mode=development && yarn lint",
+    "watch": "webpack --mode=development --watch",
+    "lint": "tslint -c ../tslint.json --project ./tsconfig.json"
   }
+}

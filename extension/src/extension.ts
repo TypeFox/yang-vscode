@@ -43,8 +43,8 @@ export class YangLanguageExtension extends SprottyVscodeLanguageExtension {
         return new SprottyLanguageWebview({
             extension: this,
             identifier,
-            localResourceRoots: ['webview/yang-sprotty-vscode/pack'],
-            scriptPath: 'webview/yang-sprotty-vscode/pack/bundle.js'
+            localResourceRoots: ['webview/pack'],
+            scriptPath: 'webview/pack/bundle.js'
         });
     }
 
