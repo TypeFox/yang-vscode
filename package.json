@@ -104,22 +104,25 @@
             {
                 "key": "alt+f",
                 "mac": "alt+f",
-                "command": "yang.diagram.fit"
+                "command": "yang.diagram.fit",
+                "when": "yang-diagram-focused"
             },
             {
                 "key": "alt+c",
                 "mac": "alt+c",
-                "command": "yang.diagram.center"
+                "command": "yang.diagram.center",
+                "when": "yang-diagram-focused"
             },
             {
                 "key": "alt+e",
                 "mac": "alt+e",
-                "command": "yang.diagram.export"
+                "command": "yang.diagram.export",
+                "when": "yang-diagram-focused"
             }
         ]
     },
     "dependencies": {
-        "sprotty-vscode": "0.0.21",
+        "sprotty-vscode": "0.0.25",
         "vscode-languageclient": "^5.2.1"
     },
     "devDependencies": {

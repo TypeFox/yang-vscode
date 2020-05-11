@@ -13,10 +13,10 @@ import { Container } from 'inversify';
 import { createYangDiagramContainer } from 'yang-sprotty';
 import { SprottyDiagramIdentifier, SprottyStarter } from 'sprotty-vscode-webview/lib';
 
-export class StatesSprottyStarter extends SprottyStarter {
+export class YangSprottyStarter extends SprottyStarter {
     createContainer(diagramIdentifier: SprottyDiagramIdentifier): Container {
         return createYangDiagramContainer(diagramIdentifier.clientId + '_sprotty');
     }
 }
 
-export const starter = new StatesSprottyStarter();
+export const starter = new YangSprottyStarter();

@@ -12,9 +12,10 @@ import { workspace, commands, Uri, ExtensionContext } from 'vscode';
 import {
     LanguageClient, LanguageClientOptions, ServerOptions, Position as LSPosition, Location as LSLocation
 } from 'vscode-languageclient';
-import { SprottyVscodeLanguageExtension, SprottyDiagramIdentifier, SprottyWebview, SprottyLanguageWebview } from 'sprotty-vscode/lib';
+import { SprottyDiagramIdentifier, SprottyWebview } from 'sprotty-vscode';
+import { SprottyLspVscodeExtension, SprottyLspWebview } from 'sprotty-vscode/lib/lsp';
 
-let extension: SprottyVscodeLanguageExtension | undefined;
+let extension: SprottyLspVscodeExtension | undefined;
 
 export function activate(context: ExtensionContext) {
     extension = new YangLanguageExtension(context);
@@ -29,7 +30,7 @@ export function deactivate(): Thenable<void> {
     return result;
 }
 
-export class YangLanguageExtension extends SprottyVscodeLanguageExtension {
+export class YangLanguageExtension extends SprottyLspVscodeExtension {
 
     constructor(context: ExtensionContext) {
         super('yang', context);
@@ -40,7 +41,7 @@ export class YangLanguageExtension extends SprottyVscodeLanguageExtension {
     }
 
     createWebView(identifier: SprottyDiagramIdentifier): SprottyWebview {
-        return new SprottyLanguageWebview({
+        return new SprottyLspWebview({
             extension: this,
             identifier,
             localResourceRoots: ['webview/pack'],

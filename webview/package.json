@@ -8,7 +8,7 @@
     "css"
   ],
   "dependencies": {
-    "sprotty-vscode-webview": "0.0.11",
+    "sprotty-vscode-webview": "0.0.16",
     "yang-sprotty": "0.2.2"
   },
   "devDependencies": {
