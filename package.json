@@ -2,7 +2,7 @@
     "name": "yang-vscode",
     "displayName": "Yangster",
     "description": "Yang editor support and diagrams for VS Code",
-    "version": "2.0.2",
+    "version": "2.0.3",
     "publisher": "typefox",
     "license": "Apache-2.0",
     "icon": "images/yin_yang.png",
