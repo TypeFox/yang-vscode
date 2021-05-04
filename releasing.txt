@@ -1,0 +1,10 @@
+1. Update yang-lsp version in package.json
+
+2. increase extension version
+
+3. add a changelog.md entry
+
+4. call `yarn` (also `yarn build`, `yarn --cwd webview build`)
+
+5. Publish OpenVSX `npx ovsx publish -p <token>` 
+
