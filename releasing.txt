@@ -1,3 +1,5 @@
+Open VSX
+
 1. Update yang-lsp version in package.json
 
 2. increase extension version
@@ -6,5 +8,14 @@
 
 4. call `yarn` (also `yarn build`, `yarn --cwd webview build`)
 
-5. Publish OpenVSX `npx ovsx publish -p <token>` 
+5. Publish OpenVSX `npx ovsx publish -p <open vsx access token>` 
 
+VSCode
+
+1. Install vsce `npm install -g vsce`
+
+2. Create token in `https://dev.azure.com/typefox/_usersSettings/tokens`
+
+3. Login `vsce login typefox`
+
+4. Publish: `vsce publish`

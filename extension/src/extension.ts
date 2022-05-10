@@ -32,7 +32,7 @@ export function deactivate(): Thenable<void> {
 
 export class YangLanguageExtension extends SprottyLspVscodeExtension {
 
-    constructor(context: ExtensionContext) {
+    constructor(context: ExtensionContext) {
         super('yang', context);
     }
 

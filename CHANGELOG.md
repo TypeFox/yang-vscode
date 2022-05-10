@@ -1,5 +1,7 @@
 # Change Log
+## v2.1.0
 
+ * Update [yang-lsp](https://github.com/theia-ide/yang-lsp) to version 0.5.0
 ## v2.0.6
 
  * Update [yang-lsp](https://github.com/theia-ide/yang-lsp) to version 0.4.0
