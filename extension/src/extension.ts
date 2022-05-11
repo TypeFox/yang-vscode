@@ -10,8 +10,8 @@ import * as path from 'path';
 import * as os from 'os';
 import { workspace, commands, Uri, ExtensionContext } from 'vscode';
 import {
-    LanguageClient, LanguageClientOptions, ServerOptions, Position as LSPosition, Location as LSLocation
-} from 'vscode-languageclient';
+    LanguageClientOptions, Position as LSPosition, Location as LSLocation, LanguageClient, ServerOptions
+} from 'vscode-languageclient/node';
 import { SprottyDiagramIdentifier, SprottyWebview } from 'sprotty-vscode';
 import { SprottyLspVscodeExtension, SprottyLspWebview } from 'sprotty-vscode/lib/lsp';
 
@@ -44,8 +44,8 @@ export class YangLanguageExtension extends SprottyLspVscodeExtension {
         return new SprottyLspWebview({
             extension: this,
             identifier,
-            localResourceRoots: ['webview/pack'],
-            scriptPath: 'webview/pack/bundle.js'
+            localResourceRoots: [this.getExtensionFileUri('webview', 'pack')],
+            scriptUri: this.getExtensionFileUri('webview', 'pack', 'bundle.js')
         });
     }
 
