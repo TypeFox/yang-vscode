@@ -6,14 +6,13 @@
  * of the License at http://www.apache.org/licenses/LICENSE-2.0
  */
 
-import * as path from 'path';
+import * as net from 'net';
 import * as os from 'os';
-import { workspace, commands, Uri, ExtensionContext } from 'vscode';
-import {
-    LanguageClientOptions, Position as LSPosition, Location as LSLocation, LanguageClient, ServerOptions
-} from 'vscode-languageclient/node';
+import * as path from 'path';
 import { SprottyDiagramIdentifier, SprottyWebview } from 'sprotty-vscode';
 import { SprottyLspVscodeExtension, SprottyLspWebview } from 'sprotty-vscode/lib/lsp';
+import { commands, ExtensionContext, Uri, workspace } from 'vscode';
+import { LanguageClient, LanguageClientOptions, Location as LSLocation, Position as LSPosition, ServerOptions, StreamInfo } from 'vscode-languageclient/node';
 
 let extension: SprottyLspVscodeExtension | undefined;
 
@@ -29,6 +28,10 @@ export function deactivate(): Thenable<void> {
     extension = undefined;
     return result;
 }
+
+// Use DEBUG true to connect via Socket to server at port: 5008
+const DEBUG = false;
+const SERVER_PORT = 5008;
 
 export class YangLanguageExtension extends SprottyLspVscodeExtension {
 
@@ -50,21 +53,6 @@ export class YangLanguageExtension extends SprottyLspVscodeExtension {
     }
 
     protected activateLanguageClient(context: ExtensionContext): LanguageClient {
-        const executable = os.platform() === 'win32' ? 'yang-language-server.bat' : 'yang-language-server';
-        const serverModule = context.asAbsolutePath(path.join('server', 'bin', executable));
-
-        // If the extension is launched in debug mode then the debug server options are used
-        // Otherwise the run options are used
-        const serverOptions: ServerOptions = {
-            run: {
-                command: serverModule
-            },
-            debug: {
-                command: serverModule,
-                args: ['-Xdebug', '-Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n,quiet=y', '-Xmx256m']
-            }
-        }
-
         // Options to control the language client
         const clientOptions: LanguageClientOptions = {
             // Register the server for plain text documents
@@ -76,9 +64,11 @@ export class YangLanguageExtension extends SprottyLspVscodeExtension {
                 fileEvents: workspace.createFileSystemWatcher('**/*.yang')
             }
         }
-
+        const clientId = {id: 'yangLanguageServer', name: 'Yang Language Server'};
         // Create the language client and start the client.
-        const languageClient = new LanguageClient('yangLanguageServer', 'Yang Language Server', serverOptions, clientOptions);
+        const languageClient = DEBUG
+        ? getSocketLanguageClient(clientId, clientOptions, SERVER_PORT)
+        : getStdioLanguageClient(clientId, clientOptions, context);
         const disposable = languageClient.start()
 
         commands.registerCommand('yang.show.references', (uri: string, position: LSPosition, locations: LSLocation[]) => {
@@ -101,4 +91,34 @@ export class YangLanguageExtension extends SprottyLspVscodeExtension {
 
         return languageClient;
     }
+}
+
+function getStdioLanguageClient(clientId:{id: string, name: string}, clientOptions: LanguageClientOptions, context: ExtensionContext): LanguageClient {
+    const executable = os.platform() === 'win32' ? 'yang-language-server.bat' : 'yang-language-server';
+    const serverModule = context.asAbsolutePath(path.join('server', 'bin', executable));
+
+    // If the extension is launched in debug mode then the debug server options are used
+    // Otherwise the run options are used
+    const serverOptions: ServerOptions = {
+        run: {
+            command: serverModule
+        },
+        debug: {
+            command: serverModule,
+            args: ['-Xdebug', '-Xnoagent', '-Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n,quiet=y', '-Xmx256m']
+        }
+    }
+    return new LanguageClient(clientId.id, clientId.name, serverOptions, clientOptions);
+}
+
+function getSocketLanguageClient(clientId:{id: string, name: string}, clientOptions: LanguageClientOptions, serverPort: number): LanguageClient {
+    const serverOptions: ServerOptions = () => {
+        const socket = net.connect({ port: serverPort });
+        const result: StreamInfo = {
+            writer: socket,
+            reader: socket
+        };
+        return Promise.resolve(result);
+    };
+    return new LanguageClient(clientId.id, clientId.name, serverOptions, clientOptions);
 }
