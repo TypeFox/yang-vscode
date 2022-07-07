@@ -2374,27 +2374,27 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==
 
-sprotty-protocol@~0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/sprotty-protocol/-/sprotty-protocol-0.11.0.tgz#f8ff89121155520b4e32ea0c05927e7a56173b99"
-  integrity sha512-OxRKrKx8mNOxX8CBKsP4epu7YGjT4XvaGwNfAwtVQVh2OPQq98t78A86XGjJThw9axm950QX0KQWGbrzX7FJuQ==
+sprotty-protocol@~0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/sprotty-protocol/-/sprotty-protocol-0.12.0.tgz#542eb6396a645f85f8cfc2e7ef1d9b90c7b1980b"
+  integrity sha512-vbov+XfbmSeMYb46vm6dJvK3q7YKUvg0q7JnM6H7Ca5qY8TaZCEZ5Vc8zHKFZGWchcwnQYKqLTzwDItsMikD0A==
 
-sprotty-vscode-protocol@~0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/sprotty-vscode-protocol/-/sprotty-vscode-protocol-0.2.0.tgz#b9ee32fa4c2c19f6c08b6db3add3f3f2452b38e5"
-  integrity sha512-iF8Gs4xpyCwuEHU0IUgD/+ZAhf8/SpYht5oWbnhLqJtGHirck2pwcfERukcSKSsPVt1rVyABHJYws8i+Dn/fsA==
+sprotty-vscode-protocol@~0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/sprotty-vscode-protocol/-/sprotty-vscode-protocol-0.3.0.tgz#8b3be8945af0cf90eeb0b0556f8de85305948cf7"
+  integrity sha512-p7PguMSJ6HC5Jo2FOdoazH/KbJZzO4Dtob72HCKkR90Wa1/3e57ETMvUCbjOf1xSFlO0OJ4ygjNgOhiJDocIPQ==
   dependencies:
     path "^0.12.7"
-    sprotty-protocol "~0.11.0"
+    sprotty-protocol "~0.12.0"
     vscode-languageserver-protocol "^3.16.0"
 
-sprotty-vscode@0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/sprotty-vscode/-/sprotty-vscode-0.2.0.tgz#8989bbdb817da2e8bef8a05e6a56fc033745889e"
-  integrity sha512-E84bAZ76pfm7NYFwZRxNvDFFCft8Iru5USDkdXwPUFqw7/oxWf9EHMShlswtuVG10Qf3C9Th8zojyrgK4i+Vcg==
+sprotty-vscode@0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/sprotty-vscode/-/sprotty-vscode-0.3.1.tgz#f44b65a9ea7f230d00e2a69d49739eb3672ca177"
+  integrity sha512-o6eP+FVInFPJNe0GdsN56IdxRJCaOaGv1FGUdN7orxbEgzMTYOhbMmSiGeEBdGb1E92sf6RVQ+VPRHTJ023Zjg==
   dependencies:
     path "^0.12.7"
-    sprotty-vscode-protocol "~0.2.0"
+    sprotty-vscode-protocol "~0.3.0"
     vscode-languageclient "^7.0.0"
 
 ssri@^6.0.1:

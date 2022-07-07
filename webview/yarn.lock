@@ -1383,7 +1383,7 @@ interpret@^1.4.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
-inversify@^5.0.1, inversify@^5.1.1:
+inversify@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/inversify/-/inversify-5.1.1.tgz#6fbd668c591337404e005a1946bfe0d802c08730"
   integrity sha512-j8grHGDzv1v+8T1sAQ+3boTCntFPfvxLCkNcxB1J8qA0lUN+fAlSyYd+RXKvaPRL4AGyPxViutBEJHNXOyUdFQ==
@@ -2524,46 +2524,28 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==
 
-sprotty-protocol@~0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/sprotty-protocol/-/sprotty-protocol-0.11.0.tgz#f8ff89121155520b4e32ea0c05927e7a56173b99"
-  integrity sha512-OxRKrKx8mNOxX8CBKsP4epu7YGjT4XvaGwNfAwtVQVh2OPQq98t78A86XGjJThw9axm950QX0KQWGbrzX7FJuQ==
-
 sprotty-protocol@~0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/sprotty-protocol/-/sprotty-protocol-0.12.0.tgz#542eb6396a645f85f8cfc2e7ef1d9b90c7b1980b"
   integrity sha512-vbov+XfbmSeMYb46vm6dJvK3q7YKUvg0q7JnM6H7Ca5qY8TaZCEZ5Vc8zHKFZGWchcwnQYKqLTzwDItsMikD0A==
 
-sprotty-vscode-protocol@~0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/sprotty-vscode-protocol/-/sprotty-vscode-protocol-0.2.0.tgz#b9ee32fa4c2c19f6c08b6db3add3f3f2452b38e5"
-  integrity sha512-iF8Gs4xpyCwuEHU0IUgD/+ZAhf8/SpYht5oWbnhLqJtGHirck2pwcfERukcSKSsPVt1rVyABHJYws8i+Dn/fsA==
+sprotty-vscode-protocol@~0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/sprotty-vscode-protocol/-/sprotty-vscode-protocol-0.3.0.tgz#8b3be8945af0cf90eeb0b0556f8de85305948cf7"
+  integrity sha512-p7PguMSJ6HC5Jo2FOdoazH/KbJZzO4Dtob72HCKkR90Wa1/3e57ETMvUCbjOf1xSFlO0OJ4ygjNgOhiJDocIPQ==
   dependencies:
     path "^0.12.7"
-    sprotty-protocol "~0.11.0"
+    sprotty-protocol "~0.12.0"
     vscode-languageserver-protocol "^3.16.0"
 
-sprotty-vscode-webview@0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/sprotty-vscode-webview/-/sprotty-vscode-webview-0.2.0.tgz#da36ce5edcdaa9b8c45232cbf279152e6df8e852"
-  integrity sha512-koeoSZt4sFHymJr2rEU1IMuTfCConsjccru0FsuNr4ETXs/Tl7fw/7m7JIOd/xrUuLvUexbYXrihtCkQYGDJ1Q==
+sprotty-vscode-webview@0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/sprotty-vscode-webview/-/sprotty-vscode-webview-0.3.1.tgz#4865de05228ff8ec8df6aa94974764f2457471fb"
+  integrity sha512-DoZSFvwxWj70aON/aPu02YM5Qu0PXloBJqKQGt0+jBu9smMQ+cRG8ZpHRS7WSgfvYZhQnx3c3U5W7VMe/BNCVg==
   dependencies:
-    sprotty "~0.11.1"
-    sprotty-vscode-protocol "~0.2.0"
+    sprotty "~0.12.0"
+    sprotty-vscode-protocol "~0.3.0"
     vscode-uri "^3.0.2"
-
-sprotty@~0.11.1:
-  version "0.11.1"
-  resolved "https://registry.yarnpkg.com/sprotty/-/sprotty-0.11.1.tgz#3a04703cf10efe8bd89f02ecd6bb33637d9312c5"
-  integrity sha512-wHeDbhZeGPgZebJqoWpqrkQQlpfJ1uiXIjLgIIJOhY8+bkTkGClQDMget7H6Zun7yU56x/XtwgesDyMXA4BVFg==
-  dependencies:
-    "@vscode/codicons" "^0.0.25"
-    autocompleter "^5.1.0"
-    file-saver "^2.0.2"
-    inversify "^5.0.1"
-    snabbdom "^3.0.3"
-    sprotty-protocol "~0.11.0"
-    tinyqueue "^2.0.3"
 
 sprotty@~0.12.0:
   version "0.12.0"
