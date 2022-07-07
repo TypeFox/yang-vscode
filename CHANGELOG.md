@@ -1,4 +1,10 @@
 # Change Log
+## v2.2.0
+ * Update [yang-lsp](https://github.com/theia-ide/yang-lsp) to version 0.7.0
+ * Update [sprotty-vscode](https://github.com/eclipse/sprotty-vscode) version 0.3.1
+ * Update [yang-sprotty](https://github.com/theia-ide/yang-sprotty) to version 0.3.0
+ * Update vscode-languageclient to version 7.0
+
 ## v2.1.0
 
  * Update [yang-lsp](https://github.com/theia-ide/yang-lsp) to version 0.5.0
