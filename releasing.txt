@@ -8,7 +8,9 @@ Open VSX
 
 4. call `yarn` (also `yarn build`, `yarn --cwd webview build`)
 
-5. Publish OpenVSX `npx ovsx publish -p <open vsx access token>` 
+5. Create token `https://open-vsx.org/user-settings/tokens` or use existing
+
+6. Publish OpenVSX `npx ovsx publish -p <open vsx access token>` 
 
 VSCode
 

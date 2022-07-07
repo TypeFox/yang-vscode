@@ -93,7 +93,7 @@ export class YangLanguageExtension extends SprottyLspVscodeExtension {
     }
 }
 
-function getStdioLanguageClient(clientId:{id: string, name: string}, clientOptions: LanguageClientOptions, context: ExtensionContext): LanguageClient {
+function getStdioLanguageClient(clientId: {id: string, name: string}, clientOptions: LanguageClientOptions, context: ExtensionContext): LanguageClient {
     const executable = os.platform() === 'win32' ? 'yang-language-server.bat' : 'yang-language-server';
     const serverModule = context.asAbsolutePath(path.join('server', 'bin', executable));
 
@@ -111,7 +111,7 @@ function getStdioLanguageClient(clientId:{id: string, name: string}, clientOptio
     return new LanguageClient(clientId.id, clientId.name, serverOptions, clientOptions);
 }
 
-function getSocketLanguageClient(clientId:{id: string, name: string}, clientOptions: LanguageClientOptions, serverPort: number): LanguageClient {
+function getSocketLanguageClient(clientId: {id: string, name: string}, clientOptions: LanguageClientOptions, serverPort: number): LanguageClient {
     const serverOptions: ServerOptions = () => {
         const socket = net.connect({ port: serverPort });
         const result: StreamInfo = {
