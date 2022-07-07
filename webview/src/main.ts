@@ -6,8 +6,8 @@
  * of the License at http://www.apache.org/licenses/LICENSE-2.0
  */
 
-import 'reflect-metadata';
-import 'yang-sprotty/css/dark/diagram.css'
+import "reflect-metadata";
+import 'yang-sprotty/css/dark/diagram.css';
 import 'sprotty-vscode-webview/css/sprotty-vscode.css';
 import { Container } from 'inversify';
 import { createYangDiagramContainer } from 'yang-sprotty';

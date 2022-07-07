@@ -24,6 +24,10 @@ const config = {
                 test: /\.css$/,
                 exclude: /\.useable\.css$/,
                 use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.ttf$/,
+                use: ['file-loader'],
             }
         ]
     },

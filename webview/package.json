@@ -8,8 +8,8 @@
     "css"
   ],
   "dependencies": {
-    "sprotty-vscode-webview": "0.0.16",
-    "yang-sprotty": "0.2.2"
+    "sprotty-vscode-webview": "0.3.1",
+    "yang-sprotty": "0.3.0"
   },
   "devDependencies": {
     "css-loader": "^3.5.2",
@@ -19,7 +19,8 @@
     "tslint": "^6.1.1",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "file-loader": "^6.2.0"
   },
   "scripts": {
     "prepare": "yarn clean && yarn build",
