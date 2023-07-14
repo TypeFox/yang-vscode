@@ -67,15 +67,15 @@ export class YangLanguageExtension extends SprottyLspVscodeExtension {
         const clientId = {id: 'yangLanguageServer', name: 'Yang Language Server'};
         // Create the language client and start the client.
         const languageClient = DEBUG
-        ? getSocketLanguageClient(clientId, clientOptions, SERVER_PORT)
-        : getStdioLanguageClient(clientId, clientOptions, context);
+            ? getSocketLanguageClient(clientId, clientOptions, SERVER_PORT)
+            : getStdioLanguageClient(clientId, clientOptions, context);
         const disposable = languageClient.start()
 
         commands.registerCommand('yang.show.references', (uri: string, position: LSPosition, locations: LSLocation[]) => {
             commands.executeCommand('editor.action.showReferences',
-                        Uri.parse(uri),
-                        languageClient.protocol2CodeConverter.asPosition(position),
-                        locations.map(languageClient.protocol2CodeConverter.asLocation));
+                Uri.parse(uri),
+                languageClient.protocol2CodeConverter.asPosition(position),
+                locations.map(languageClient.protocol2CodeConverter.asLocation));
         })
 
         commands.registerCommand('yang.apply.workspaceEdit', (obj: any) => {

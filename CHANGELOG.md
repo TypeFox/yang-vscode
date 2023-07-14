@@ -1,4 +1,7 @@
 # Change Log
+## v2.3.0
+ * Update [yang-lsp](https://github.com/theia-ide/yang-lsp) to version 0.7.2
+
 ## v2.2.0
  * Update [yang-lsp](https://github.com/theia-ide/yang-lsp) to version 0.7.0
  * Update [sprotty-vscode](https://github.com/eclipse/sprotty-vscode) version 0.3.1
