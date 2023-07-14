@@ -137,8 +137,8 @@
     },
     "scripts": {
         "prepare": "yarn --cwd webview && yarn install:languageserver",
-        "install:languageserver": "rm -rf ./server && yarn download:languageserver && unzip yang-language-server.zip && mv yang-language-server-0.7.0 server",
-        "download:languageserver": "curl -L -o yang-language-server.zip https://github.com/theia-ide/yang-lsp/releases/download/v0.7.0/yang-language-server_diagram-extension_0.7.0.zip",
+        "install:languageserver": "rm -rf ./server && yarn download:languageserver && unzip yang-language-server.zip && mv yang-language-server-0.7.2 server",
+        "download:languageserver": "curl -L -o yang-language-server.zip https://github.com/theia-ide/yang-lsp/releases/download/v0.7.2/yang-language-server_diagram-extension_0.7.2.zip",
         "vscode:prepublish": "yarn clean && yarn lint && webpack --mode=production && yarn --cwd webview vscode:prepublish",
         "clean": "rm -rf ./extension/lib ./extension/pack",
         "build": "webpack --mode=development && yarn lint",
