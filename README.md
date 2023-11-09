@@ -17,7 +17,7 @@ Features
 ![ templates ](https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-templates.gif)
 ![ completion ](https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-completion.gif)
 ![ navigation ](https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-navigation.gif)
-![ diagram ](https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-diagram.png)
+<img src="https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-diagram.png" width="480"/>
 
 * As you type reporting of parsing and compilation errors
 * Code completion

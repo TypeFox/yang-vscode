@@ -8,7 +8,7 @@ Prepare Build
 
 4. call `yarn` (also `yarn build`, `yarn --cwd webview build`)
 
-5. Install vsce `npm install -g vsce`
+5. Install vsce `npm install -g @vscode/vsce`
 
 6. Prepare and test the extension: `vsce package` 
 
