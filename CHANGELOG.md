@@ -1,11 +1,16 @@
 # Change Log
+## v2.3.2
+ * Update [yang-lsp](https://github.com/TypeFox/yang-lsp) to version [0.7.4](https://github.com/TypeFox/yang-lsp/releases/tag/v0.7.4)
+ * Fixed - Formatting not honoring VS Code settings [#70](https://github.com/TypeFox/yang-vscode/issues/70)
+
 ## v2.3.1
- * Update [yang-lsp](https://github.com/TypeFox/yang-lsp) to version 0.7.3
+ * Update [yang-lsp](https://github.com/TypeFox/yang-lsp) to version [0.7.3](https://github.com/TypeFox/yang-lsp/releases/tag/v0.7.3)
+
 ## v2.3.0
- * Update [yang-lsp](https://github.com/TypeFox/yang-lsp) to version 0.7.2
+ * Update [yang-lsp](https://github.com/TypeFox/yang-lsp) to version [0.7.2](https://github.com/TypeFox/yang-lsp/releases/tag/v0.7.2)
 
 ## v2.2.0
- * Update [yang-lsp](https://github.com/TypeFox/yang-lsp) to version 0.7.0
+ * Update [yang-lsp](https://github.com/TypeFox/yang-lsp) to version [0.7.0](https://github.com/TypeFox/yang-lsp/releases/tag/v0.7.0)
  * Update [sprotty-vscode](https://github.com/eclipse/sprotty-vscode) version 0.3.1
  * Update [yang-sprotty](https://github.com/TypeFox/yang-sprotty) to version 0.3.0
  * Update vscode-languageclient to version 7.0

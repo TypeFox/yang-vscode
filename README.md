@@ -9,13 +9,15 @@ Quick Start
 1. Install the Extension
 2. If you do not have a _Java 11_ correctly installed
     * Download and install a Java 11 runtime environment.
-3. Extension is activated when you first access a YANG file 
+3. Extension is activated when you first access a YANG file
+4. Use "Open in Diagram" from the context menu to see the graphical model view.
 
 Features
 =========
 ![ templates ](https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-templates.gif)
 ![ completion ](https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-completion.gif)
 ![ navigation ](https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-navigation.gif)
+![ diagram ](https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-diagram.png)
 
 * As you type reporting of parsing and compilation errors
 * Code completion
