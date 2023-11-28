@@ -30,7 +30,7 @@ export function deactivate(): Thenable<void> {
 }
 
 // Use DEBUG true to connect via Socket to server at port: 5008
-const DEBUG = false;
+const DEBUG = process.env.YANG_LS === 'socket';
 const SERVER_PORT = 5008;
 
 export class YangLanguageExtension extends SprottyLspVscodeExtension {

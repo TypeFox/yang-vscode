@@ -3,7 +3,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Yang Extension",
+            "name": "Yang Extension (embedded-ls)",
             "type": "extensionHost",
             "request": "launch",
             "runtimeExecutable": "${execPath}",
@@ -12,6 +12,19 @@
             ],
             "outFiles": [
                 "${workspaceFolder}/extension/pack/*.js"
+            ],
+            "sourceMaps": true
+        },
+        {
+            "name": "Yang Extension (socket-ls)",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "env": {
+                "YANG_LS": "socket"
+            },
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
             ],
             "sourceMaps": true
         }

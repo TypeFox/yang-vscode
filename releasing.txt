@@ -27,3 +27,5 @@ Publish VSCode
 2. Login `vsce login typefox`
 
 3. Publish: `vsce publish`
+
+Create and push release tag
