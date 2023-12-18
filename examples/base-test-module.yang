@@ -1,0 +1,32 @@
+module base-test-module {
+    yang-version 1.1;
+    namespace urn:ietf:params:xml:ns:yang:base-test-module;
+    prefix base-test-module;
+
+    container system {
+        must "user";
+        must "daytime or time";
+
+        container daytime {
+            leaf date {
+                type string;
+            }
+        }
+
+        leaf time {
+            type string;
+        }
+
+        container user {
+            leaf type {
+                type string {
+                    length "1..10";
+                }
+            }
+        }
+        leaf-list name-server {
+            type string;
+            max-elements 10;
+        }
+    }
+}

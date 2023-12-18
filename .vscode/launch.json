@@ -8,6 +8,7 @@
             "request": "launch",
             "runtimeExecutable": "${execPath}",
             "args": [
+                "${workspaceFolder}/examples",
                 "--extensionDevelopmentPath=${workspaceFolder}"
             ],
             "outFiles": [
@@ -24,6 +25,7 @@
                 "YANG_LS": "socket"
             },
             "args": [
+                "${workspaceFolder}/examples",
                 "--extensionDevelopmentPath=${workspaceFolder}"
             ],
             "sourceMaps": true

@@ -1,0 +1,10 @@
+module ietf-netconf-acm {
+
+    namespace "urn:ietf:params:xml:ns:yang:ietf-netconf-acm";
+
+    prefix nacm;
+    revision 2012-02-22 {
+        description
+          "dummy";
+    }
+}
