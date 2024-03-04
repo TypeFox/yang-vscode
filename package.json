@@ -153,10 +153,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/theia-ide/yang-vscode.git"
+        "url": "https://github.com/TypeFox/yang-vscode.git"
     },
     "bugs": {
-        "url": "https://github.com/theia-ide/yang-vscode/issues"
+        "url": "https://github.com/TypeFox/yang-vscode/issues"
     },
     "galleryBanner": {
         "color": "#1d1d1d",
