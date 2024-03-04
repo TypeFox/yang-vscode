@@ -84,6 +84,12 @@
                 "category": "Yang Diagram"
             }
         ],
+        "jsonValidation": [
+            {
+                "fileMatch": "yang.settings",
+                "url": "https://raw.githubusercontent.com/TypeFox/yang-lsp/master/schema/yang-lsp-settings-schema.json"
+            }
+        ],
         "menus": {
             "editor/context": [
                 {
