@@ -1,6 +1,6 @@
 {
 	"scopeName": "source.yang",
-	"name": "Yang",
+	"name": "YANG",
 	"fileTypes": ["yang"],
 	"patterns": [
 		{

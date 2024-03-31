@@ -3,7 +3,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Yang Extension (embedded-ls)",
+            "name": "YANG LSP Extension (embedded-ls)",
             "type": "extensionHost",
             "request": "launch",
             "runtimeExecutable": "${execPath}",
@@ -17,7 +17,7 @@
             "sourceMaps": true
         },
         {
-            "name": "Yang Extension (socket-ls)",
+            "name": "YANG LSP Extension (socket-ls)",
             "type": "extensionHost",
             "request": "launch",
             "runtimeExecutable": "${execPath}",

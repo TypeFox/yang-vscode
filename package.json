@@ -1,7 +1,7 @@
 {
     "name": "yang-vscode",
     "displayName": "Yangster",
-    "description": "Yang editor support and diagrams for VS Code",
+    "description": "YANG editor support and diagrams for VS Code",
     "version": "2.3.2",
     "publisher": "typefox",
     "license": "Apache-2.0",
@@ -35,6 +35,7 @@
             {
                 "id": "yang",
                 "aliases": [
+                    "YANG",
                     "Yang",
                     "yang"
                 ],
@@ -42,6 +43,15 @@
                     ".yang"
                 ],
                 "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "jsonc",
+                "aliases": [
+                    "yang-lsp settings"
+                ],
+                "filenames": [
+                    "yang.settings"
+                ]
             }
         ],
         "grammars": [
@@ -53,7 +63,7 @@
         ],
         "configuration": {
             "type": "object",
-            "title": "Yang client configuration",
+            "title": "YANG client configuration",
             "properties": {
                 "yangLanguageServer.maxNumberOfProblems": {
                     "type": "number",
@@ -66,22 +76,22 @@
             {
                 "command": "yang.diagram.open",
                 "title": "Open in Diagram",
-                "category": "Yang Diagram"
+                "category": "YANG Diagram"
             },
             {
                 "command": "yang.diagram.fit",
                 "title": "Fit to Screen",
-                "category": "Yang Diagram"
+                "category": "YANG Diagram"
             },
             {
                 "command": "yang.diagram.center",
                 "title": "Center Selection",
-                "category": "Yang Diagram"
+                "category": "YANG Diagram"
             },
             {
                 "command": "yang.diagram.export",
                 "title": "Export Diagram to SVG",
-                "category": "Yang Diagram"
+                "category": "YANG Diagram"
             }
         ],
         "jsonValidation": [
