@@ -64,7 +64,7 @@ export class YangLanguageExtension extends SprottyLspVscodeExtension {
                 fileEvents: workspace.createFileSystemWatcher('**/*.yang')
             }
         }
-        const clientId = {id: 'yangLanguageServer', name: 'Yang Language Server'};
+        const clientId = {id: 'yangLanguageServer', name: 'YANG Language Server'};
         // Create the language client and start the client.
         const languageClient = DEBUG
             ? getSocketLanguageClient(clientId, clientOptions, SERVER_PORT)
