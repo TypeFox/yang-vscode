@@ -2,7 +2,7 @@ Language support for YANG for Visual Studio Code
 =====================
 
 Provides [YANG](https://tools.ietf.org/html/rfc7950) language support via
-[YANG Language Server](https://github.com/theia-ide/yang-lsp).
+[YANG Language Server](https://github.com/TypeFox/yang-lsp).
 
 Quick Start
 ============
@@ -14,10 +14,10 @@ Quick Start
 
 Features
 =========
-![ templates ](https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-templates.gif)
-![ completion ](https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-completion.gif)
-![ navigation ](https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-navigation.gif)
-<img src="https://raw.githubusercontent.com/theia-ide/yang-vscode/master/images/yang-diagram.png" width="480"/>
+![ templates ](https://raw.githubusercontent.com/TypeFox/yang-vscode/master/images/yang-templates.gif)
+![ completion ](https://raw.githubusercontent.com/TypeFox/yang-vscode/master/images/yang-completion.gif)
+![ navigation ](https://raw.githubusercontent.com/TypeFox/yang-vscode/master/images/yang-navigation.gif)
+<img src="https://raw.githubusercontent.com/TypeFox/yang-vscode/master/images/yang-diagram.png" width="480"/>
 
 * As you type reporting of parsing and compilation errors
 * Code completion
@@ -34,4 +34,4 @@ Features
 
 Configuration
 =============
-For configuration and further services, please have a look at the [docs of the YANG Language Server](https://github.com/theia-ide/yang-lsp/tree/master/docs).
+For configuration and further services, please have a look at the [docs of the YANG Language Server](https://github.com/TypeFox/yang-lsp/tree/master/docs).
