@@ -1,5 +1,5 @@
-YANG Language support for Visual Studio Code
-============================================
+YANG Language Server support for Visual Studio Code
+===================================================
 
 Provides [YANG][yang1.1] language support via [YANG Language Server][yang-lsp].
 
@@ -18,7 +18,9 @@ Features
 ![ templates ](https://raw.githubusercontent.com/TypeFox/yang-vscode/master/images/yang-templates.gif)
 ![ completion ](https://raw.githubusercontent.com/TypeFox/yang-vscode/master/images/yang-completion.gif)
 ![ navigation ](https://raw.githubusercontent.com/TypeFox/yang-vscode/master/images/yang-navigation.gif)
-<img src="https://raw.githubusercontent.com/TypeFox/yang-vscode/master/images/yang-diagram.png" width="480" alt=""/><!-- markdownlint-disable-line MD033 -->
+<!-- markdownlint-disable MD033 MD013 -->
+<img src="https://raw.githubusercontent.com/TypeFox/yang-vscode/master/images/yang-diagram.png" width="480" alt=""/>
+<!-- markdownlint-enable MD033 MD013 -->
 
 * As you type reporting of parsing and compilation errors
 * Code completion
@@ -36,7 +38,8 @@ Features
 Configuration
 -------------
 
-For configuration and further services, please have a look at the [docs of the YANG Language Server][yang-lsp-docs].
+For configuration and further services, please have a look at the
+[docs of the YANG Language Server][yang-lsp-docs].
 
 [yang1.1]: https://tools.ietf.org/html/rfc7950
 [yang-lsp]: https://github.com/TypeFox/yang-lsp
