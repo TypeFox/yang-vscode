@@ -23,7 +23,7 @@
 		},
 		{
 			"name": "comment.line.yang",
-			"match": "//.+"
+			"match": "//.*"
 		},
 		{
 			"name": "comment.block.yang",
