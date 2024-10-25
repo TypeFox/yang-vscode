@@ -3,7 +3,7 @@
 
 const path = require('path');
 
-/**@type {import('webpack').Configuration}*/
+/** @type {import('webpack').Configuration} */
 const config = {
     target: 'node',
 
@@ -11,7 +11,9 @@ const config = {
     output: {
         path: path.resolve(__dirname, 'extension', 'pack'),
         filename: 'extension.js',
-        libraryTarget: 'commonjs2',
+        library: {
+            type: 'commonjs2'
+        },
         devtoolModuleFilenameTemplate: info => {
             return `webpack:///${info.resourcePath.replace(/^\.\.\//, '')}`;
         },
@@ -24,12 +26,25 @@ const config = {
         extensions: ['.ts', '.js']
     },
     module: {
-        rules: [{
-            test: /\.ts$/,
-            exclude: /node_modules/,
-            use: ['ts-loader']
-        }]
+        rules: [
+            {
+                test: /\.ts$/,
+                exclude: /node_modules/,
+                use: 'ts-loader'
+            }
+        ]
     },
+    optimization: {
+        // Add any optimization options here if needed
+    },
+    performance: {
+        hints: false
+    },
+    node: {
+        __dirname: false,
+        __filename: false,
+        global: true,
+    }
 };
 
 module.exports = config;

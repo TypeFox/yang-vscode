@@ -1,4 +1,4 @@
-.*
+**/.*
 .*/
 images/*.gif
 examples/

@@ -32,11 +32,13 @@ const config = {
         ]
     },
     devtool: 'eval-source-map',
-    node: {
-        fs: 'empty',
-        child_process: 'empty',
-        net: 'empty',
-        crypto: 'empty'
+    resolve: {
+        fallback: {
+            fs: false,
+            child_process: false,
+            net: false,
+            crypto: false
+        }
     }
 };
 

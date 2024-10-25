@@ -1,5 +1,10 @@
 # Change Log
 
+## v2.3.3
+
+* Update [yang-lsp][yang-lsp] to version [0.7.6](https://github.com/TypeFox/yang-lsp/releases/tag/v0.7.6)
+* Dependencies updated.
+
 ## v2.3.2
 
 * Update [yang-lsp][yang-lsp] to version [0.7.4](https://github.com/TypeFox/yang-lsp/releases/tag/v0.7.4)
