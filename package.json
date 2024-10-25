@@ -19,12 +19,6 @@
         "network",
         "netconf"
     ],
-    "files": [
-        "extension",
-        "server",
-        "syntaxes",
-        "webview"
-    ],
     "main": "./extension/pack/extension",
     "activationEvents": [
         "onLanguage:yang",
@@ -144,6 +138,7 @@
     "devDependencies": {
         "@types/node": "^10.17.16",
         "@types/vscode": "1.22.0",
+        "@types/webpack": "^4.41.8",
         "reflect-metadata": "^0.1.13",
         "ts-loader": "^6.2.2",
         "tslint": "^6.1.3",

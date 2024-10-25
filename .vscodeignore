@@ -1,6 +1,10 @@
-.vscode/
+.*
+.*/
 images/*.gif
+examples/
+images/yang-diagram.png
 yang-language-server.zip
+releasing.txt
 **/node_modules/
 **/tsconfig.json
 **/lerna.json
