@@ -5,14 +5,16 @@ const path = require('path');
 
 /**@type {import('webpack').Configuration}*/
 const config = {
-    target: 'node', 
+    target: 'node',
 
     entry: './extension/src/extension.ts',
     output: {
         path: path.resolve(__dirname, 'extension', 'pack'),
         filename: 'extension.js',
         libraryTarget: 'commonjs2',
-        devtoolModuleFilenameTemplate: '../[resource-path]',
+        devtoolModuleFilenameTemplate: info => {
+            return `webpack:///${info.resourcePath.replace(/^\.\.\//, '')}`;
+        },
     },
     devtool: 'source-map',
     externals: {
