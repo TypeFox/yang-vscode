@@ -101,10 +101,12 @@ function getStdioLanguageClient(clientId: {id: string, name: string}, clientOpti
     // Otherwise the run options are used
     const serverOptions: ServerOptions = {
         run: {
-            command: serverModule
+            command: serverModule,
+            options: (os.platform() === 'win32') ? {shell: true} : {}
         },
         debug: {
             command: serverModule,
+            options: (os.platform() === 'win32') ? {shell: true} : {},
             args: ['-Xdebug', '-Xnoagent', '-Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n,quiet=y', '-Xmx256m']
         }
     }
