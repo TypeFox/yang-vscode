@@ -4,7 +4,7 @@ images/*.gif
 examples/
 images/yang-diagram.png
 yang-language-server.zip
-releasing.txt
+releasing.md
 **/node_modules/
 **/tsconfig.json
 **/lerna.json

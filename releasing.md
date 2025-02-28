@@ -1,4 +1,4 @@
-Prepare Build 
+Prepare Build
 
 1. Update yang-lsp version in package.json
 
@@ -10,15 +10,13 @@ Prepare Build
 
 5. Install vsce `npm install -g @vscode/vsce`
 
-6. Prepare and test the extension: `vsce package` 
-
+6. Prepare and test the extension: `vsce package`
 
 Publish Open VSX
 
 1. Create token `https://open-vsx.org/user-settings/tokens` or use existing
 
-2. Publish OpenVSX `npx ovsx publish -p <open vsx access token>` 
-
+2. Publish OpenVSX `npx ovsx publish -p <open vsx access token>`
 
 Publish VSCode
 

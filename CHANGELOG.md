@@ -1,5 +1,10 @@
 # Change Log
 
+## v2.3.4
+
+* Fix for "Spawn process fails on windows" [#95](https://github.com/TypeFox/yang-vscode/issues/95)
+* Dependencies updated.
+
 ## v2.3.3
 
 * Update [yang-lsp][yang-lsp] to version [0.7.6](https://github.com/TypeFox/yang-lsp/releases/tag/v0.7.6)
