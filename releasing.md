@@ -1,4 +1,4 @@
-Prepare Build
+# Prepare Build
 
 1. Update yang-lsp version in package.json
 
